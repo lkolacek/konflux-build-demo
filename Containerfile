@@ -5,10 +5,9 @@ RUN if curl -IsS www.google.com; then echo "Has network access!"; exit 1; fi
 
 COPY ./ /tmp
 
-RUN ls /
-
 RUN ls /tmp
 
 RUN ls /cachi2/output
 
-RUN yarn install
+WORKDIR /tmp
+RUN . /cachi2/cachi2.env && yarn install
