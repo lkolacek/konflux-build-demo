@@ -1,3 +1,3 @@
 # konflux-build-demo
 
-Test case for Yarn V1
+Test case for Yarn V1.
